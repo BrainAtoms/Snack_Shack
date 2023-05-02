@@ -1,5 +1,6 @@
 const express = require("express");
 const session = require("express-session");
+const handlebars = require('express-handlebars');
 // const routes = require("./controllers");
 
 const sequelize = require("./config/connection");
@@ -20,8 +21,16 @@ const sess = {
 
 app.use(session(sess));
 
+app.set('view engine', 'handlebars');
+app.engine('handlebars', handlebars.engine({
+    layoutsDir: `${__dirname}/views/layouts`,
+    defaultLayout: 'homepage'
+}));
+
+
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
+app.use(express.static('views'));
 
 // app.use(routes);
 
