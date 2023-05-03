@@ -38,7 +38,12 @@ router.post('/', async (req, res) => {
 // UPDATE a recipe
 router.put('/:id', async (req, res) => {
     try {
-        const recipeData = await Recipe.findByPk(req.params.id);
+        const recipeData = await Recipe.update(req.body, {
+            where: {
+                id: req.params.id,
+            },
+            individualHooks: true
+        });
         if (!recipeData) {
             res.status(404).json({ message: 'A Recipe with that ID does not exist!' });
         }
