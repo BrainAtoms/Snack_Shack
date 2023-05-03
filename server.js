@@ -34,6 +34,6 @@ app.use(express.static('views'));
 
 // app.use(routes);
 
-app.listen(port, () => {
-    console.log('app listening to port ${port}');
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now listening"));
 });
