@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Shack</title>
-    <link rel="stylesheet" href="/public/css/style.css"
-    <link rel="stylesheet" href="/public/css/tailwind.css"
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
 </head>
 
 <body>
-    
+    <div>
+        <header>
+            <h1>
+
+            </h1>
+            <nav>
+                <!-- login/logout links -->
+                {{#if logged_in}}
+                <a href="/profile">profile</a>
+                <button class="no button" id="logout">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+        </header>
+        <main>
+            {{{body}}}
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    {{#if logged in}}
+    <script src="/public/js/logout.js"
 </body>
 </html>
