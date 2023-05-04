@@ -1,1 +1,14 @@
-
+{{#each recipes as |recipe| }}
+<div class="row mb-4 recipe">
+  <div class="col-md-5">
+    <h2>
+      <a href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
+    </h2>
+    <p>
+      <span for="img">{{recipe.image}}</span>
+      <span class="time">{{format_time recipe.time}}</span>
+    </p>
+    <p>Created by {{recipe.user.name}}</p>
+  </div>
+</div>
+{{/each}}
