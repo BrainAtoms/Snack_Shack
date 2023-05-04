@@ -10,6 +10,29 @@
 </head>
 
 <body>
-    
+    <div>
+        <header>
+            <h1>
+
+            </h1>
+            <nav>
+                <!-- login/logout links -->
+                {{#if logged_in}}
+                <a href="/profile">profile</a>
+                <button class="no button" id="logout">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+        </header>
+        <main>
+            {{{body}}}
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    {{#if logged in}}
+    <script src="/public/js/logout.js"
 </body>
 </html>
