@@ -13,7 +13,12 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  const recipes = await Recipe.bulkCreate(recipeData);
+  for (const recipe of recipeData) {
+    await Recipe.create({
+      ...recipe,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
 
   process.exit(0);
 };
