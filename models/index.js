@@ -8,6 +8,10 @@ Recipe.belongsTo(User, {
     onDelete: 'CASCADE'
 });
 
+User.hasMany(Recipe, {
+    foreignKey: 'user_id'
+});
+
 Tag.belongsToMany(Recipe, {
     through: RecipeTag,
     foreignKey: "tag_id"
