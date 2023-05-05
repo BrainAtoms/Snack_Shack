@@ -16,6 +16,7 @@
 
             </h1>
             <nav>
+                <a href="/">home</a>
                 <!-- login/logout links -->
                 {{#if logged_in}}
                 <a href="/profile">profile</a>
@@ -33,9 +34,9 @@
         </footer>
     </div>
     {{#if logged_in}}
-    <script src="/public/js/logout.js"></script>
+    <script src="./js/logout.js"></script>
     {{else}}
-    <script src="/public/js/login.js"></script>
+    <script src="./js/login.js"></script>
     {{/if}}
 </body>
 </html>
