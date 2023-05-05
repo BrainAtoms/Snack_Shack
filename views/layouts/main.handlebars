@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Shack</title>
-    <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/css/tailwind.css">
+    {{!-- <link rel="stylesheet" href="/public/css/style.css"> --}}
+    {{!-- <link rel="stylesheet" href="/public/css/tailwind.css"> --}}
 </head>
 
 <body>
@@ -16,13 +16,14 @@
 
             </h1>
             <nav>
-                <a href="/">home</a>
+
+                <a href="/">Home</a>
                 <!-- login/logout links -->
                 {{#if logged_in}}
-                <a href="/profile">profile</a>
-                <button class="no button" id="logout">logout</button>
+                <a href="/profile">Profile</a>
+                <button class="no-button" id="logout">Logout</button>
                 {{else}}
-                <a href="/login">login</a>
+                <a href="/login">Login</a>
                 {{/if}}
             </nav>
         </header>
@@ -35,8 +36,6 @@
     </div>
     {{#if logged_in}}
     <script src="./js/logout.js"></script>
-    {{else}}
-    <script src="./js/login.js"></script>
     {{/if}}
 </body>
 </html>
