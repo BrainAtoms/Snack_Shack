@@ -8,7 +8,7 @@
       <span for="img">{{recipe.image}}</span>
       <span class="time">{{recipe.time}}</span>
     </p>
-    <p>Created by {{recipe.user.name}}</p>
+    <p>Created by {{recipe.user.name}} on {{format_date recipe.date_created}}</p>
   </div>
 </div>
 {{/each}}
