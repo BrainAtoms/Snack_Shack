@@ -5,8 +5,9 @@
       <a href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
     </h2>
     <p>
-      <span for="img">{{recipe.image}}</span>
-      <span class="time">{{recipe.time}}</span>
+      {{{recipe.image}}}
+      <br>
+      <span class="time">Time to make (hours, minutes, seconds): {{recipe.time}}</span>
     </p>
     <p>Created by {{recipe.user.name}} on {{format_date recipe.date_created}}</p>
   </div>
