@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 
+
 <body class="bg-blue-400">
     <div>
-        <header>
-            <h1 class="flex justify-center">Snack Shack</h1>
-            <nav class="flex justify-center">
+        <header class="header flex justify-between">
+            <h1 class="text-5xl ml-6">Snack Shack</h1>
+            <nav class="mr-6 text-2xl flex justify-between gap-3">
                 <a href="/">Home</a>
                 <!-- login/logout links -->
                 {{#if logged_in}}
                 <a href="/profile">Profile</a>
-                <button class="no-button" id="logout">Logout</button>
+                <a href="/login"id="logout">Logout</a>
                 {{else}}
                 <a href="/login">Login</a>
                 {{/if}}
