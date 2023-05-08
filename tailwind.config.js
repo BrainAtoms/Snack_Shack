@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 module.exports = {
-  content: ["./views/**/*.handlebars"],
+  content: ["./views/**/*.handlebars","./seeds/*.json"],
   theme: {
     colors: {
       transparent: 'transparent',
