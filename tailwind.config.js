@@ -15,7 +15,11 @@ module.exports = {
       blue: colors.blue,
       green: colors.emerald,
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero':"url('../Background/Project 2.jpg')"
+      },
+    },
   },
   plugins: [],
 }
