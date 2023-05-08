@@ -13,6 +13,15 @@
         />
       </div>
       <div class="form-group">
+        <label for="recipe-time">How long does it take to make your recipe?:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="recipe-time"
+          name="recipe-time"
+        />
+      </div>
+      <div class="form-group">
         <label for="avatar">Choose an image for your recipe:</label>
         <br />
         <input
@@ -23,11 +32,19 @@
         />
       </div>
       <div class="form-group">
-        <label for="project-desc">description:</label>
+        <label for="recipe-ing">ingredients:</label>
         <textarea
           class="form-input"
-          id="recipe-desc"
-          name="recipe-desc"
+          id="recipe-ing"
+          name="recipe-ing"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="recipe-dir">directions:</label>
+        <textarea
+          class="form-input"
+          id="recipe-dir"
+          name="recipe-dir"
         ></textarea>
       </div>
       <div class="form-group">
@@ -51,4 +68,4 @@
   {{/if}}
 </div>
 
-{{! <script src="./js/profile.js"></script> }}
+<script src="./js/profile.js"></script>
