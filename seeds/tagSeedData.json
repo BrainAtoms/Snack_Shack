@@ -1,0 +1,20 @@
+[
+    {
+        "tag_name": "Meat"
+    }, 
+    {
+        "tag_name": "Seafood"
+    },
+    {
+        "tag_name": "Soup"
+    },
+    {
+        "tag_name": "Dairy"
+    },
+    {
+        "tag_name": "Gluten Free"
+    },
+    {
+        "tag_name": "Vegan"
+    }
+]
