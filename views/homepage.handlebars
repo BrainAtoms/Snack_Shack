@@ -1,6 +1,6 @@
-<div class="grid grid-cols-2 place-content-center grid-flow-row auto-cols-auto recipe">
+<div class="grid grid-cols-2 grid-flow-row auto-cols-auto recipe">
   {{#each recipes as |recipe|}}
-  <div class="p-5 mr-6 mb-6 bg-brown-800">
+  <div class="p-5 mr-6 mb-6 bg-brown-800" align="center">
     <h2>
       <a href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
     </h2>
@@ -8,7 +8,7 @@
       {{{recipe.image}}}
       </a>
       <span class="time">Time to make (hours, minutes, seconds): {{recipe.time}}</span>
-    <p align="center">Created by {{recipe.user.name}} on {{format_date recipe.date_created}}</p>
+    <p>Created by {{recipe.user.name}} on {{format_date recipe.date_created}}</p>
   </div>
 {{/each}}
 </div>
