@@ -11,5 +11,11 @@ img {
   }
 
 a:hover {
-  color: navy;
+  color: yellow;
 }
+
+button:hover {
+  color: yellow;
+}
+
+
