@@ -1,9 +1,8 @@
-<section class="container columns-2">
-{{#each recipes as |recipe|}}
-<div class="flex justify-center row mb-4 recipe">
-  <div>
+<div class="grid grid-cols-2 flex justify-center row grid-flow-row auto-cols-auto recipe">
+  {{#each recipes as |recipe|}}
+  <div class="p-5 mr-6 mb-6 bg-brown-800">
     <h2>
-      <a class="flex justify-center" href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
+      <a href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
     </h2>
     <a href="/recipe/{{recipe.id}}">
       {{{recipe.image}}}
@@ -11,6 +10,5 @@
       <span class="time">Time to make (hours, minutes, seconds): {{recipe.time}}</span>
     <p align="center">Created by {{recipe.user.name}} on {{format_date recipe.date_created}}</p>
   </div>
-</div>
 {{/each}}
-</section>
+</div>
