@@ -1,13 +1,13 @@
 <div align="center" class="p-5 mr-6 mb-6 bg-brown-800">
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Submit new recipe:</h3>
+    <h3 class="text-2xl">Submit new recipe:</h3>
     <br>
     <form class="form new-recipe-form">
       <div class="form-group">
         <label for="recipe-name">Recipe name:</label>
         <input
-          class="form-input"
+          class="form-input text-black"
           type="text"
           id="recipe-name"
           name="recipe-name"
@@ -17,7 +17,7 @@
         <div class="form-group">
         <label for="recipe-category">Category:</label>
         <input
-          class="form-input"
+          class="form-input text-black"
           id="recipe-category"
           name="recipe-category"
         />
@@ -26,7 +26,7 @@
       <div class="form-group">
         <label for="recipe-time">How long does it take to make your recipe? (00:00:00):</label>
         <input
-          class="form-input"
+          class="form-input text-black"
           type="text"
           id="recipe-time"
           name="recipe-time"
@@ -36,7 +36,7 @@
       <div class="form-group">
         <label for="avatar">Link an image for your recipe:</label>
         <br />
-        <input type="url" name="url" id="url"
+        <input class="text-black" type="url" name="url" id="url"
        placeholder="image link"
        pattern="https://.*" size="30"
        required>
@@ -45,7 +45,7 @@
       <div class="form-group">
         <label for="recipe-ing">Ingredients:</label>
         <textarea
-          class="form-input"
+          class="form-input text-black"
           id="recipe-ing"
           name="recipe-ing"
         ></textarea>
@@ -54,14 +54,14 @@
       <div class="form-group">
         <label for="recipe-dir">Directions:</label>
         <textarea
-          class="form-input"
+          class="form-input text-black"
           id="recipe-dir"
           name="recipe-dir"
         ></textarea>
       </div>
       <br>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="rounded-md bg-white text-brown-800 px-5 py-2 hover:bg-yellow-200">Submit</button>
       </div>
     </form>
   </div>
@@ -73,7 +73,7 @@
       {{#each recipes as |recipes|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4><a href="/recipe/{{recipes.id}}">{{recipes.title}}</a></h4>
+            <h4 class="text-lg"><a class="hover:text-yellow-200" href="/recipe/{{recipes.id}}">{{recipes.title}}</a></h4>
           </div>
         </div>
       {{/each}}

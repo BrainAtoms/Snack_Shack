@@ -1,11 +1,11 @@
 <div class="grid grid-cols-2 grid-flow-row auto-cols-auto recipe">
   {{#each recipes as |recipe|}}
   <div class="p-5 mr-6 mb-6 bg-brown-800" align="center">
-    <h2>
-      <a href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
+    <h2 class="text-2xl mb-2">
+      <a class="hover:text-yellow-200" href="/recipe/{{recipe.id}}">{{recipe.title}}</a>
     </h2>
     <a href="/recipe/{{recipe.id}}">
-    <img class='object-scale-down' src={{recipe.image}}>
+    <img class='object-scale-down bg-white' src={{recipe.image}}>
       
       </a>
       <span class="time">Time to make (hours, minutes, seconds): {{recipe.time}}</span>
