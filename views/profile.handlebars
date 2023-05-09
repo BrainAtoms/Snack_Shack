@@ -1,7 +1,8 @@
+<div align="center" class="p-5 mr-6 mb-6 bg-brown-800">
 <div class="row mt-4">
   <div class="col-md-6">
     <h3>Submit new recipe:</h3>
-
+    <br>
     <form class="form new-recipe-form">
       <div class="form-group">
         <label for="recipe-name">Recipe name:</label>
@@ -11,6 +12,8 @@
           id="recipe-name"
           name="recipe-name"
         />
+        </div>
+        <br>
         <div class="form-group">
         <label for="recipe-category">Category:</label>
         <input
@@ -19,7 +22,7 @@
           name="recipe-category"
         />
       </div>
-      </div>
+      <br>
       <div class="form-group">
         <label for="recipe-time">How long does it take to make your recipe? (00:00:00):</label>
         <input
@@ -29,6 +32,7 @@
           name="recipe-time"
         />
       </div>
+      <br>
       <div class="form-group">
         <label for="avatar">Link an image for your recipe:</label>
         <br />
@@ -37,6 +41,7 @@
        pattern="https://.*" size="30"
        required>
       </div>
+      <br>
       <div class="form-group">
         <label for="recipe-ing">Ingredients:</label>
         <textarea
@@ -45,6 +50,7 @@
           name="recipe-ing"
         ></textarea>
       </div>
+      <br>
       <div class="form-group">
         <label for="recipe-dir">Directions:</label>
         <textarea
@@ -53,12 +59,13 @@
           name="recipe-dir"
         ></textarea>
       </div>
+      <br>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
   </div>
-
+<br>
   {{#if recipes.length}}
     <div class="col-md-6 recipe-list">
       <h3>Current Recipes:</h3>
@@ -72,6 +79,7 @@
       {{/each}}
     </div>
   {{/if}}
+</div>
 </div>
 
 <script src="./js/profile.js"></script>
