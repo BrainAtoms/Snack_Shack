@@ -6,11 +6,12 @@ const newFormHandler = async (event) => {
     const steps = document.querySelector('#recipe-dir').value.trim();
     const category = document.querySelector('#recipe-category').value.trim();
     const time = document.querySelector('#recipe-time').value.trim();
+    const image = document.querySelector('#url').value.trim();
   
     if (title && ingredients && time && steps && category) {
       const response = await fetch(`/api/recipes`, {
         method: 'POST',
-        body: JSON.stringify({ title, ingredients, time, steps, category }),
+        body: JSON.stringify({ title, ingredients, time, steps, category, image }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -26,4 +27,4 @@ const newFormHandler = async (event) => {
 
   document
   .querySelector('.new-recipe-form')
-  .addEventListener('submit', newFormHandler);
+      .addEventListener('submit', newFormHandler);

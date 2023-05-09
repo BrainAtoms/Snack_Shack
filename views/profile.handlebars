@@ -12,16 +12,16 @@
           name="recipe-name"
         />
         <div class="form-group">
-        <label for="recipe-category">category:</label>
-        <textarea
+        <label for="recipe-category">Category:</label>
+        <input
           class="form-input"
           id="recipe-category"
           name="recipe-category"
-        ></textarea>
+        />
       </div>
       </div>
       <div class="form-group">
-        <label for="recipe-time">How long does it take to make your recipe?:</label>
+        <label for="recipe-time">How long does it take to make your recipe? (00:00:00):</label>
         <input
           class="form-input"
           type="text"
@@ -30,17 +30,15 @@
         />
       </div>
       <div class="form-group">
-        <label for="avatar">Choose an image for your recipe:</label>
+        <label for="avatar">Link an image for your recipe:</label>
         <br />
-        <input
-          type="file"
-          id="avatar"
-          name="avatar"
-          accept="image/png, image/jpeg"
-        />
+        <input type="url" name="url" id="url"
+       placeholder="image link"
+       pattern="https://.*" size="30"
+       required>
       </div>
       <div class="form-group">
-        <label for="recipe-ing">ingredients:</label>
+        <label for="recipe-ing">Ingredients:</label>
         <textarea
           class="form-input"
           id="recipe-ing"
@@ -48,7 +46,7 @@
         ></textarea>
       </div>
       <div class="form-group">
-        <label for="recipe-dir">directions:</label>
+        <label for="recipe-dir">Directions:</label>
         <textarea
           class="form-input"
           id="recipe-dir"
@@ -65,10 +63,10 @@
     <div class="col-md-6 recipe-list">
       <h3>Current Recipes:</h3>
 
-      {{#each recipes as |recipe|}}
+      {{#each recipes as |recipes|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4><a href="/recipe/{{recipe.id}}">{{recipe.name}}</a></h4>
+            <h4><a href="/recipe/{{recipes.id}}">{{recipes.title}}</a></h4>
           </div>
         </div>
       {{/each}}
