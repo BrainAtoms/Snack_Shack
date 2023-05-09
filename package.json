@@ -9,8 +9,8 @@
     "seed": "node seeds/seed.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Shea, Brian Adams, Ian Heap",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
