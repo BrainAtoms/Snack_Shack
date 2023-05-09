@@ -7,15 +7,6 @@ img {
     border-radius: 4px;
     padding: 5px;
     width: 350px;
-    height: 350px;
   }
-
-a:hover {
-  color: yellow;
-}
-
-button:hover {
-  color: yellow;
-}
 
 
