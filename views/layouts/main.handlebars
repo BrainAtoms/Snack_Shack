@@ -14,15 +14,15 @@
 <body class="bg-center bg-cover bg-no-repeat" style="background-image: url(/background-image/Project-2.jpg)">
     <div>
         <header class="header flex items-center justify-between p-5">
-            <h1 class="text-5xl ml-6 text-white bg-brown-800 px-5 py-2 hover:text-yellow-200"><a href="/">Snack Shack</a></h1>
-            <nav class="mr-6 text-2xl flex justify-between gap-3 bg-brown-800 text-white px-5 py-2">
+            <h1 class="rounded-md text-5xl ml-6 text-white bg-brown-800 px-5 py-2 hover:text-yellow-200"><a href="/">Snack Shack</a></h1>
+            <nav class="rounded-md mr-6 text-2xl flex justify-between gap-3 bg-brown-800 text-white px-5 py-2">
                 <a class="hover:text-yellow-200" href="/">Home</a>
                 <!-- login/logout links -->
                 {{#if logged_in}}
                 <a class="hover:text-yellow-200" href="/profile">Profile</a>
                 <a class="hover:text-yellow-200" href="/login"id="logout">Logout</a>
                 {{else}}
-                <a class="hover:text-yellow-200" href="/login">Login</a>
+                <a class="hover:text-yellow-200" href="/login">Sign Up/Login</a>
                 {{/if}}
             </nav>
         </header>
