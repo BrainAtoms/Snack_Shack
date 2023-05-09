@@ -26,14 +26,19 @@ router.get('/:id', async (req, res) => {
 });
 
 // CREATE a new recipe
+// CREATE a new recipe
 router.post('/', async (req, res) => {
     try {
-        const recipeData = await Recipe.create(req.body);
-        res.status(200).json(recipeData);
-    } catch (err) {
-        res.status(400).json(err);
-    }
-});
+        const newRecipe = await Recipe.create({
+            ...req.body,
+            user_id: req.session.user_id,
+          });
+          console.log(newRecipe)
+          res.status(200).json(newRecipe);
+        } catch (err) {
+          res.status(400).json(err);
+        }
+      });
 
 // UPDATE a recipe
 router.put('/:id', async (req, res) => {
