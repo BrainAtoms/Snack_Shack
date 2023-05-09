@@ -8,3 +8,13 @@ img {
     padding: 5px;
     width: 350px;
   }
+
+a:hover {
+  color: yellow;
+}
+
+button:hover {
+  color: yellow;
+}
+
+
