@@ -4,13 +4,15 @@
         "time": "12:00:00",
         "ingredients": "3 1/2 pounds, sparerribs -- cut into individiual pieces, salt, pepper, 2 cups of water, garlic salt, 8 ounces of bottle Russian salad dressing, 6 ounces of can pineapple juice",
         "steps": "Sprinkle ribs with salt and pepper.  Place in slow-cooking pot; pour water over them. Cover and cook on low for 6 to 7 hours or until tender. Drain. Arrange ribs on broiler pan; sprinkle with garlic salt. Make sauce by combining salad dressing and pineapple juice.  Brush ribs with half the sauce. Broil until brown; turn, brush other side and brown. NOTES : If possible, ask the butcher to cut each rib in half, crosswise, so they will be a more convenient size to handle as an appetizer.",
-        "image": "<img class=img-fluid src='/images/appetizer_ribs.jpeg'>"
+        "category": "Meat",
+        "image": "<img class='object-scale-down src='/images/appetizer_ribs.jpeg'>"
     }, 
     {
         "title": "Artichoke Dip Appetizer",
         "time": "00:40:00",
         "ingredients": "8 ounces of cream cheese, 12 ounces of shredded mozzarella cheese, 1 cup of mayonnaise, 1 cup of grated parmesan cheese, 1 finely chopped onion, 2 cloves of finely chopped garlic, 2 small jars of marinated artichoke hearts -- DRAIN WELL, 2 bags of pita bread",
         "steps": "The following appetizer is sure to be a crowd pleaser.  I have never taken it anywhere without being asked for the recipe: Tear artichokes apart with your fingers. Cut up pita bread into chip size triangles, separate and bake on a cookie sheet until crispy (approx 5 minutes). Combine all other ingredients and mash (a Kitchen Aid mixer works great). Bake in a uncovered casserole dish for approx 30 minutes @ 350 or until bubbly. Serve hot out of the oven and scoop up dip with pita bread.",
+        "category": "Dairy",
         "image": "<img class='object-scale-down' src='/images/artichoke_dip.jpeg'>"
     },
     {
@@ -18,6 +20,7 @@
         "time": "00:30:00",
         "ingredients": "8 corn tortillas, 1 can of corn black beans -- rinsed and drained, 1 can of pink salmon -- drained, 2 tablespoons of safflower oil, 1/4 cup of fresh lime juice, 1/4 cup of chopped fresh parsley, 1/2 teaspoon of onion powder, 1/2 teaspoon of celery salt, 3/4 teaspoon of ground cumin, 3/4 teaspoon of minced garlic, 1/2 teaspoon of grated lime zest, 1/4 teaspoon of dried red pepper flakes, 1/4 teaspoon of chili pepper",
         "steps": "Preheat oven to 350 degrees. Cut tortillas in triangles and toast oven until crisp, about 5 minutes.  Combine the beans and salmon, flaking the salmon with a fork. Mix remaining ingredients; chill to blend flavors. Serve with tortilla chips.",
+        "category": "Seafood",
         "image": "<img class='object-scale-down' src='/images/black_bean_and_salmon.jpeg'>"
     },
     {
@@ -25,6 +28,7 @@
         "time": "01:30:00",
         "ingredients": "1 1/2 pounds of unpeeled eggplant cut into 3/4 cubes, 1 tablespoon of kosher salt, 1/2 cup of olive oil, 1 cup of coarsely diced onion, 4 medium sweet red peppers cut into 3/4 squares, 1 cup celery coarsely diced, 8 medium ripe Italian tomatoes pureed, 1/4 cup of red wine vinegar, 2 tablespoons of sugar, 1/2 teaspoon of minced garlic, 1/4 cup of pitted and sliced black olives, 3 tablespoons of capers, salt and ground black pepper",
         "steps": "Sprinkle the eggplant with the coarse salt and toss the cubes. Let them drain in a colander for 1/2 hr., then pat dry with paper towels. Preheat oven to 375 F. Heat olive oil in a 12 inch skillet and saute onion, peppers, and celery over med. high heat for 5 min., stirring.  Add the eggplant and toss for another 5 min.  Add the tomato puree, winer vinegar, sugar, and garlic and stir for 2 min. longer. In the skillet (if it's ovenproof) or baking dish, bake the caponata, uncovered for 20 min.  Add the olives and capers and stir well. Bake 15 min. more, or until most of liquid has evaporated. Cool the caponata, then taste and season with salt and pepper. Refrigerate, covered, for 24 hrs. before serving. Caponata will keep for at least a week in the fridge, or 6 mos. frozen.",
+        "category": "Gluten Free",
         "image": "<img class='object-scale-down' src='/images/caponata.jpeg'>"
     },
     {
@@ -32,6 +36,7 @@
         "time": "00:10:00",
         "ingredients": "1 can of garbanzo beans (reserve 1/2 liquid), 2 cloves of garlic, 2 tablespoons of soy sauce, 3 tablespoons of lemon juice, 3 tablespoons of extra virgin olive oil, 3 tablespoons of tahini",
         "steps": "Blend all ingredients including reserved bean liquid in a food processor until smooth. Serve with pita bread.",
+        "category": "Vegan",
         "image": "<img class='object-scale-down' src='/images/classic_hummus.jpeg'>"
     }, 
     {
@@ -39,6 +44,7 @@
         "time": "00:30:00",
         "ingredients": "1 tablespoon of extra virgin olive oil, 1/2 cup of minced onion, 2 tablespoons of minced garlic, 1/4 cup of dry white wine, 1 can of whole plum tomatoes, 2 cups of chicken or vegetable broth, 1 bay leaf, about 10 leaves of chiffonade or basil, 2 cups of heavy cream, salt",
         "steps": "Heat olive oil in a large soup pot over medium heat. Add onion and cook until translucent. Then add garlic and cook for an additional 2 minutes. Add wine. Stir in tomatoes, including juices, and break up the tomatoes with a spoon. Bring to a boil. Pour in the broth and add the bay leaf. Return to a boil, then reduce heat and simmer for 10 minutes. Remove the bay leaf and blend until smooth with a stick blender. Reduce hat and simmer 10 minutes, then stir in the basil. Add heavy cream and heat thoroughly without boiling. Add salt to taste.",
+        "category": "Soup",
         "image": "<img class='object-scale-down' src='/images/creamy_tomato_and_basil_soup.jpeg'>"
     }
 ]

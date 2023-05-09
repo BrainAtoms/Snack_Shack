@@ -16,6 +16,10 @@ Recipe.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        category: {
+            type: DataTypes.STRING, 
+            allowNull: false,
+        },
         time: {
             type: DataTypes.TIME,
             allowNull: false,
