@@ -10,7 +10,7 @@ There is no installation for our project, the user will simply have to navigate 
 
 ## Usage
 
-1. Navigate to [Snack Shack](https://floating-reef-78228.herokuapp.com/).
+1. Navigate to [Snack Shack](https://damp-reaches-78303.herokuapp.com/).
 
 ![Homepage](./screenshots/Homepage.png)
 
